@@ -6,6 +6,8 @@ tmp*.py
 tmp*
 *pickle
 data/
+ckpts/
+work_dirs/*
 
 # Zip Files/Packages #
 *.7z

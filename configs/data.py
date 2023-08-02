@@ -5,7 +5,8 @@ data_dir = __os.environ.get("VL_DATA_DIR")
 if data_dir is None:
     raise ValueError("please set environment `VL_DATA_DIR` before continue")
 
-data_root = __os.path.join(data_dir, "videos_images")
+# data_root = __os.path.join(data_dir, "videos_images")
+data_root = data_dir
 anno_root_pt = __os.path.join(data_dir, "anno_pretrain")
 anno_root_downstream = __os.path.join(data_dir, "anno_downstream")
 

@@ -1,5 +1,7 @@
 #!/usr/bin/env sh
 
+set -x
+
 mode=$1 # slurm or local
 nnodes=$2
 ngpus=$3

@@ -18,6 +18,8 @@ class ImageQADataset(ImageVideoBaseDataset):
         self.eos = eos
 
         self.anno_list = load_anno(ann_file)
+        # For debug
+        self.anno_list = self.anno_list[:100]
 
         if mode == "eval":
             self.answer_list = json.load(open(answer_list, "r"))
